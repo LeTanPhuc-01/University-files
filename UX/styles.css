@@ -1,0 +1,32 @@
+body
+{
+    font-family: sans-serif;
+}
+h2 {
+    color: green;
+    margin-bottom: -15x;
+    /* text-decoration: underline; */
+    border-bottom: 2px black solid;
+    /* display: none; */
+}
+/* levels
+block: header, paragraph, list 
+inline: strong, em, bold,... take up as much space as needed
+*/
+ul {
+    padding-left: 16px;
+}
+/* specificity comes first then order(most recently added comes first) */
+.blue {
+    color: blue;
+    font-weight: bold;
+    /* font-weight of class blue still apply cuz no conflict with any upper specificity selector */
+}
+
+#green {
+    color: green;
+}
+.normal
+{
+    font-weight: normal;
+}
