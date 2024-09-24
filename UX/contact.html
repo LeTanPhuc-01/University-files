@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <style>
+        label,input, textarea, button
+        {
+            display: block;
+        }
+        label
+        {
+            font-weight: bold;
+        }
+
+        input, textarea{
+            margin-bottom: 1.2em;
+        }
+        /* input that is child of label 1st way */
+        /* label input{
+            display: inline;
+        } */
+         /* 2nd way */
+        input[type="checkbox"]{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <form method="post">
+        
+        <label>Name</label> <!-- inline element -->
+        <input name="name">
+        <label>Email Address</label>
+        <input name="emailAddress">
+        <label>Your Message</label>
+        <textarea name="message"></textarea>
+       <!-- Only this input is different -->
+        <label>
+            <input type="checkbox" name="canContact">
+            Can I contact you at your email?</label>
+        
+        <button>
+            Submit
+        </button>
+    </form>
+    <script>
+         document.querySelector('input').focus();
+    </script>
+</body>
+</html>

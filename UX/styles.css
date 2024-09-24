@@ -1,14 +1,20 @@
 body
 {
-    font-family: sans-serif;
+    background: #ddd;
+    /* load font in order */
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: DM Serif Display, serif;
 }
 h2 {
-    color: green;
+    
     margin-bottom: -15x;
     padding-bottom: 5px;
     /* text-decoration: underline; */
     
-    border-bottom: 2px black solid;
+    border-bottom: 2px #CCC solid;
     /* display: none; */
 }
 /* levels
@@ -32,4 +38,20 @@ ul {
 .normal
 {
     font-weight: normal;
+}
+.different{
+    color: purple;
+}
+.container
+{
+    background: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 25px #5d5c5c;
+    /* first 2: x, y coordinate for the light source but inverse, move up then left can try it using shadow editor in browser*/
+    margin: 90px auto;
+    /* 1st one top-bottom 2nd left right */
+    padding: 70px;
+    width: 800px;
+    
+    /* margin-top: 90px; */
 }
