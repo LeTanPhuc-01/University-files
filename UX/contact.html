@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <style>
-        label,input, textarea, button
-        {
-            display: block;
-        }
-        label
-        {
-            font-weight: bold;
-        }
+    <link rel="stylesheet" href="Assignment3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-        input, textarea{
-            margin-bottom: 1.2em;
-        }
-        /* input that is child of label 1st way */
-        /* label input{
-            display: inline;
-        } */
-         /* 2nd way */
-        input[type="checkbox"]{
-            display: inline;
-        }
-    </style>
 </head>
 <body>
     <h1>Contact Me</h1>
-    <form method="post">
-        
-        <label>Name</label> <!-- inline element -->
-        <input name="name">
-        <label>Email Address</label>
-        <input name="emailAddress">
-        <label>Your Message</label>
-        <textarea name="message"></textarea>
-       <!-- Only this input is different -->
-        <label>
-            <input type="checkbox" name="canContact">
-            Can I contact you at your email?</label>
-        
-        <button>
-            Submit
-        </button>
-    </form>
-    <script>
-         document.querySelector('input').focus();
-    </script>
+    <div class ="triangle_down1"></div>
+    <div class="container">
+        <form method="post">
+            <!-- HTML
+            for, id, name, method,... :attribute 
+             <>: angle brackets
+             <html>: tag
+             . #: style selector
+             attribute: targer="_blank" : open link in new tab
+             CSS:
+             font-family, font-size: property, value
+             
+             -->
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name">
+
+            <label for="emailAddress">Email Address</label>
+            <input name="emailAddress" type="email" placeholder="Your email">
+
+            <label for="message">Your Message</label>
+            <textarea name="message" rows="3" placeholder="Write your message here..."></textarea>
+
+            <label for="canContact">
+                <input type="checkbox" name="canContact">
+                Can I contact you at your email?
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
