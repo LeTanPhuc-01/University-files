@@ -1,0 +1,25 @@
+# OS specific
+.DS_Store
+
+# Java specific - compiled classes, build output
+*.class
+/bin/
+build/
+*.jar
+*.war
+*.ear
+
+# IDE and editor settings (VS Code, IntelliJ, etc.)
+.vscode/
+.idea/
+*.iml
+
+# Log files
+*.log
+
+# Temporary files or caches
+tmp/
+.cache/
+
+# HTML specific (if you generate temporary files)
+*.tmp
